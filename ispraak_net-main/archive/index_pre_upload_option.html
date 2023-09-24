@@ -1,0 +1,119 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>iSpraak</title>
+<link rel="stylesheet" type="text/css" href="css/ispraak.css?v=8" media="all">
+<script type="text/javascript" src="javascript/ispraak.js"></script>
+</head>
+
+<body id="main_body" >
+
+<div id="mySidebar" class="sidebar">
+<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+<a href="#">About</a>
+<a href="login.php">Connect</a>
+<a href="#">Explore</a>
+<a href="#">Help</a>
+</div>
+	
+<div id="mainz">
+<button class="openbtn" onclick="openNav()">☰</button>  
+</div>
+		
+<img id="top" src="images/top.png" alt="">
+
+	
+<div id="form_container">
+	
+	
+<div id="headerBar"></div>
+		<form id="iSpraak" class="ispraak_form"  method="post" action="makeit.php">
+		<div class="form_description">
+		<img style="float: left; padding: 0px 20px 0px 0px" src="images/logo5.png" height="35" alt="iSpraak-Logo" align="left"> 
+	
+			iSpraak for Google Chrome is an online activity generator that automates speech evaluation for second language learners. 
+			
+			Create a quick activity below as a guest, or login via the ☰ menu button at the left. </p>
+			
+			</div>						
+			<ul >
+			
+		<li id="li_1" >
+		<label class="description" for="element_1">E-mail Address</label>
+		<div>
+			<input id="element_1" name="element_1" class="element text medium" type="text" maxlength="255" value=""/> 
+		</div><p class="guidelines" id="guide_1">Registered users can login with the menu ☰ button!</p> 
+		</li>		
+		
+		<input class="winniethepooh" autocomplete="off" type="text" id="user_zip_kode" name="user_zip_kode" placeholder="School_Name">
+    
+		<li id="li_3" >
+		<label class="description" for="element_3">Language of Instruction </label>
+		<div>
+		<select class="element select medium" id="element_3" name="element_3" onchange="tdirect()"> 
+<option value="am" >Amharic</option>
+<option value="ar" >Arabic</option>
+<option value="ca" >Catalan</option>
+<option value="zh" >Chinese</option>
+<option value="hr" >Croatian</option>
+<option value="cs" >Czech</option>
+<option value="nl" >Dutch</option>
+<option value="en" selected="selected">English</option>
+<option value="fr" >French</option>
+<option value="de" >German</option>
+<option value="el" >Greek</option>
+<option value="he" >Hebrew</option>
+<option value="hi" >Hindi</option>
+<option value="it" >Italian</option>
+<option value="ja" >Japanese</option>
+<option value="ko" >Korean</option>
+<option value="fa" >Persian</option>
+<option value="pl" >Polish</option>
+<option value="pt" >Portuguese</option>
+<option value="ru" >Russian</option>
+<option value="es" >Spanish</option>
+<option value="sw" >Swahili</option>
+<option value="sv" >Swedish</option>
+<option value="tr" >Turkish</option>
+<option value="vi" >Vietnamese</option>
+<option value="zu" >Zulu</option>
+
+		</select><p class="guidelines" id="guide_3">Select your language of instruction. iSpraak now supports 26 languages!</p>
+		</div> 
+		</li>		<li id="li_4" >
+		<label class="description" for="element_4">Do you have an MP3 audio file to upload as part of this activity?  </label>
+		<span>
+			<input id="element_4_1" name="element_4" class="element radio" type="radio" value="1" checked="checked" />
+<label class="choice" for="element_4_1">No</label>
+<input id="element_4_2" name="element_4" class="element radio" type="radio" value="2" />
+<label class="choice" for="element_4_2">Yes</label>
+
+		</span><p class="guidelines" id="guide_4">Select *NO* for automatic Text-to-Speech. <br><br>Select *YES*, and you can upload the audio file on the next screen.</p> 
+		</li>		<li id="li_2" >
+		<label class="description" for="element_2">Enter the text you would like your students to read.  </label>
+		<div>
+			<textarea id="element_2" name="element_2" class="element textarea medium" maxlength="370"></textarea> 
+			<p class="guidelines" id="guide_4">Very short contextualized texts work best for speech recognition and speech synthesis. <br><br> (370 character limit)<br><br>Proper text selection is important! Please check out the Guidelines page by clicking the menu icon ☰ !</p> 
+		</div> 
+		</li>
+			</ul>
+			
+				<center><input id="saveForm" class="button4" type="submit" name="submit" value="Make Activity" /></center>
+
+			
+		</form>	
+		
+		
+			<div class="alert" id="alert" style="display:none">
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+  <strong>Warning: Google Chrome is required for students to submit speech activities! <br><br>You can still create activities in this browser, but Chrome is required to complete assignments.</strong>
+</div>
+		
+		<div id="footer">
+			© D. Nickolai. Source Code available on GitHub under the MIT License <br>
+			Funded in part by the National Endowment for the Humanities
+			
+		</div>
+</div>
+</body>
+</html>
